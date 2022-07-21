@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.img-logo {
+   width: 100%;
+   height: 150px;
+   object-fit: cover;
+   object-position: 20% 10%;
+}
+
+.contenedor {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+}
+
+.articulo-nosotros, .imagen-nosotros, .articulo-origen, .imagen-origen, .articulo-mate, .imagen-mate {
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor .header {
+    background-color: rgb(236, 222, 182);
+    color: black;
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+.contenedor .footer {
+    grid-column: span 2;
+}
+
+.contenido {
+    grid-column: span 2;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto)
+}
+
+nav {
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 100%;
+    list-style-type: none;
+}
+
+.nav-list a {
+    color: black;
+}
+
+.nav-list a:hover {
+    color: grey;
+}
+
+#titulo-hero, #subtitulo-hero {
+    text-align: center;
+}
+
+.mate-list {
+    display: flex;
+    font-style: italic;
+    list-style-type: decimal;
+    flex-direction: column;
+    margin-left: 5rem;
+    margin-top: 2%;
+
+}
+
+#img-mate, #img-1, #img-2 {
+    width: 220px;
+    height: auto;
+}
+
+footer {
+    background-color: rgb(236, 222, 182);
+    font-size: 85%;
+    display: flex;
+    justify-content: left;
+    flex-wrap: nowrap;
+    border-top-style: solid;
+    border-width: 2px;
+    border-color: black;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, auto);
+}
+
+.footer-redes {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15px;
+
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.logo-footer {
+    justify-content: center;
+    max-width: 100px;
+    margin-left: 10px;
+}
+
+.contenedor-derechos {
+    grid-column: 3 / 5;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 80%;
+    margin-right: 10px;
+}
+
+.icono-redes {
+    margin-top: 3px;
+    margin-right: 3px;
+}
+
+
+/*
+.nosotros-texto, .origen-texto {
+    display: float;
+    width: 45%;
+
+
+}
+*/
+
+#Nosotros, #Historias {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* MEDIA RESPONSIVE*/
+
+@media screen and (min-width: 769px) {
+    html {
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 90%;
+    }
+    .contenido {
+        grid-column: span 2;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto)
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contenido {
+        grid-column: 1 / -1;
+        grid-column: span 2;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, auto)
+    }
+    html{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 70%;
+    }
+    #img-mate, #img-1, #img-2 {
+        width: 150px;
+        height: auto;
+    }
+}
+
+
+
+/*PAGINA PRODUCTOS*/
+.contenedorProductos .headerProductos {
+    background-color: rgb(236, 222, 182);
+    color: black;
+}
+
+.contenidoProductos {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, auto)
+}
+
+.seccionNueces, .seccionFrutos, .seccionNuevos {
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 768px) {
+    .contenidoProductos {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, auto);
+    }
+}
+
+/*PAGINA NOSOTROS */
+.contenedorNosotros .headerNosotros {
+    background-color: rgb(236, 222, 182);
+    color: black;
+}
+
+.historia-familia {
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+/*PAGINA CONTACTO */
+.contenedorContacto .headerContacto {
+    background-color: rgb(236, 222, 182);
+    color: black;
+}
+
+.formContacto {
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+
+}
+
+form {
+    width: 60vw;
+	max-width: 500px;
+	min-width: 300px;
+	margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+fieldset {
+    border: none;
+    padding: 2rem 0;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+button[type="submit"] {
+    display: block;
+}
+
+button[type="reset"] {
+    display: block;
+}
+
+
+/*PAGINA COMO COMPRAR */
+.contenedorComprar .headerComprar {
+    background-color: rgb(236, 222, 182);
+    color: black;
+}
+
+.comrpar {
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+}
