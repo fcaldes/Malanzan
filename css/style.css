@@ -63,7 +63,7 @@ nav {
 }
 
 .nav-list a:hover {
-    color: grey;
+    color: black;
 }
 
 #titulo-hero, #subtitulo-hero {
@@ -80,60 +80,19 @@ nav {
 
 }
 
-#img-mate, #img-1, #img-2 {
+#img-1, #img-2, #img-pasassolas, #img-nuezveganacortada {
     width: 220px;
     height: auto;
 }
 
-footer {
-    background-color: rgb(236, 222, 182);
-    font-size: 85%;
-    display: flex;
-    justify-content: left;
-    flex-wrap: nowrap;
-    border-top-style: solid;
-    border-width: 2px;
-    border-color: black;
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(1, auto);
+#img-mate, #img-nuecessolas, #img-nuezentera {
+    height: 220px;
+    width: auto;
 }
 
-.footer-redes {
-    grid-column: span 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 15px;
 
-}
 
-.footer-list {
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-}
 
-.logo-footer {
-    justify-content: center;
-    max-width: 100px;
-    margin-left: 10px;
-}
-
-.contenedor-derechos {
-    grid-column: 3 / 5;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    font-size: 80%;
-    margin-right: 10px;
-}
-
-.icono-redes {
-    margin-top: 3px;
-    margin-right: 3px;
-}
 
 
 /*
@@ -150,12 +109,50 @@ footer {
     margin-bottom: 15px;
 }
 
+/* NUEVO FOOTER */
+
+.footer {
+    background-color: rgb(236, 222, 182);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+
+.footer-logo img{
+    width: 150px;
+    padding: 0.5rem;
+}
+
+.listadefooter li {
+    list-style-type: none;
+    text-align: center;
+}
+
+.listadefooter a {
+    color: black;
+    text-decoration: none;
+    font-size: smaller;
+}
+
+.footerredes a{
+    padding: 0.2rem;
+}
+}
+.footer .parteDeAbajo {
+    background-color: grey;
+    padding: 10px 10px;
+    text-align: center;
+    color: white;
+}
+
+
+
 /* MEDIA RESPONSIVE*/
 
 @media screen and (min-width: 769px) {
     html {
         font-family:Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 90%;
     }
     .contenido {
         grid-column: span 2;
@@ -177,10 +174,9 @@ footer {
     }
     html{
         font-family:Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 70%;
     }
     #img-mate, #img-1, #img-2 {
-        width: 150px;
+        width: 200px;
         height: auto;
     }
 }

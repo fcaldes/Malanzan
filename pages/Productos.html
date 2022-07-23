@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link CSS BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <title>Productos</title>
     <!--Link CSS-->
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
@@ -18,15 +20,35 @@
             <img class="img-logo" src="../img/fotonueces.jpeg">
         </div>
         <div class="topnav" id="myTopnav">
-            <nav>
-                <ul class="nav-list">
-                    <li><a href="../index.html" class="active">HOME</a></li>
-                    <li><a href="Productos.html">PRODUCTOS</a></li>
-                    <li><a href="Nosotros.html">NOSOTROS</a></li>
-                    <li><a href="Comocomprar.html">CÓMO COMPRAR</a></li>
-                    <li><a href="Contacto.html">CONTACTO</a></li>
-                </ul>
-            </nav>
+            <nav class="navbar navbar-expand-lg bg-transparent">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                  <img src="../img/relleno2.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                  </a>
+                  <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Productos.html">PRODUCTOS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Nosotros.html">NOSOTROS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Comocomprar.html">CÓMO COMPRAR</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Contacto.html">CONTACTO</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         </div>
         <!--HERO SECTION-->
         <section>
@@ -42,13 +64,13 @@
                     <div class="subSeccionNueces">
                     <article>
                         <h3>Nueces clásicas</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, dolorum, qui voluptatum vitae praesentium reprehenderit repellendus eum illo at sunt quam quia accusamus vel repellat? Pariatur sapiente rerum optio reprehenderit?</p>
-                        <img src="" alt="" />
+                        <p>Las nueces clásicas son nuestro producto estrella ya que nacen directamente de la tradición riojana. Están elaboradas con nueces enteras especialmente seleccionadas por su rico sabor y su gran tamaño. Para darle el toque dulce, las nueces envuelven una porción abundante de dulce de leche que hace que el resultado final sea un perfecto balance de sabores.</p>
+                        <img id="img-nuezentera"src="..\img\nuezentera.JPG" alt="" />
                     </article>
                     <article>
                         <h3>Nueces veganas</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, dolorum, qui voluptatum vitae praesentium reprehenderit repellendus eum illo at sunt quam quia accusamus vel repellat? Pariatur sapiente rerum optio reprehenderit?</p>
-                        <img src="" alt="" />
+                        <p>A partir de los nuevos hábitos alimenticios que son cada vez más importantes en las sociedades actuales, decidimos formar parte de este movimiento ofreciendo también nueces que puedan ser consumidas por personas que optaron por productos sin nada de maltrato animal. En este caso, las nueces son las mismas que las tradicionales pero el dulce de leche es reemplazado por dulce de almendras.</p>
+                        <img id="img-nuezveganacortada" src="..\img\nuezveganacortada.jpeg" alt="" />
                     </article>
                     </div>
             </div>
@@ -57,13 +79,13 @@
                 <div class="subSeccionFrutos">
                     <article>
                         <h3>Nueces</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga autem commodi maxime sunt odio saepe excepturi explicabo modi quae facilis optio veritatis temporibus sapiente quasi, harum dicta illum reiciendis dignissimos?</p>
-                        <img src="" alt="" />
+                        <p>Nuestras nueces que vienen directamente de la provincia de La Rioja también pueden ser compradas por medio kilo o por kilo. Nunca van a comer nueces tan ricas como estas!</p>
+                        <img id="img-nuecessolas" src="..\img\nuecesss.jpeg" alt="" />
                     </article>
                     <article>
                         <h3>Pasas de uva</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga autem commodi maxime sunt odio saepe excepturi explicabo modi quae facilis optio veritatis temporibus sapiente quasi, harum dicta illum reiciendis dignissimos?</p>
-                        <img src="" alt="" />
+                        <p>Otro producto destacado que tiene su origen en La Rioja! Nuestras pasas de uva son el snack perfecto para tener energías todo el día. Son adictivas.</p>
+                        <img id="img-pasassolas" src="..\img\pasas de uva.jpeg" alt="" />
                     </article>
                 </div>
             </div>
@@ -71,14 +93,14 @@
                 <h2>Nuevos Productos</h2>
                 <div class="subSeccionNuevos">
                     <article>
-                        <h3>Dulce de Membrillo</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga autem commodi maxime sunt odio saepe excepturi explicabo modi quae facilis optio veritatis temporibus sapiente quasi, harum dicta illum reiciendis dignissimos?</p>
+                        <h3>Dulce de Membrillo (Próximamente)</h3>
+                        <p>Estamos incorporando a nuestros productos más variedad de productos regionales. Por esto es que también estamos trayendo Dulce de Membrillo del norte del país. Excelente para comerlo acompañado de queso o para preparar una pastafrola casera.</p>
                         <img src="" alt="" />
                     </article>
                     <article>
                         <h3>Yuyos para el mate</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga autem commodi maxime sunt odio saepe excepturi explicabo modi quae facilis optio veritatis temporibus sapiente quasi, harum dicta illum reiciendis dignissimos?</p>
-                        <img src="" alt="" />
+                        <p>De donde nosotros venimos, es muy común acompañar al mate con yuyos. El burrito tiene un aroma muy particular y, además, le deja un gustito muy especial al mate.</p>
+                        <img id="img-mate" src="../img/yuyos.jpeg" alt="" />
                     </article>
                 </div>
             </div>
@@ -101,5 +123,7 @@
         </div>
     </footer>
 </div>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>

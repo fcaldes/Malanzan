@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!--TITULO-->
     <title>Malanzán Dulces</title>
-    <!--Link CSS-->
+    <!--CSS PROPIO-->
     <link rel="stylesheet" type="text/css" href=".\css\style.css" media="screen" />
 </head>
 <body>
@@ -15,15 +18,35 @@
             <img class="img-logo" src="img\fotonueces.jpeg">
             </div>
             <div class="topnav" id="myTopnav">
-                <nav>
-                    <ul class="nav-list">
-                        <li><a href="#" class="active">HOME</a></li>
-                        <li><a href="pages\Productos.html">PRODUCTOS</a></li>
-                        <li><a href="pages\Nosotros.html">NOSOTROS</a></li>
-                        <li><a href="pages\Comocomprar.html">CÓMO COMPRAR</a></li>
-                        <li><a href="pages\Contacto.html">CONTACTO</a></li>
-                    </ul>
-                </nav>
+                <nav class="navbar navbar-expand-lg bg-transparent">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#">
+                      <img src="img\relleno2.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                      </a>
+                      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="pages\Productos.html">PRODUCTOS</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="pages\Nosotros.html">NOSOTROS</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="pages\Comocomprar.html">CÓMO COMPRAR</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="pages\Contacto.html">CONTACTO</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
             </div>
             <section>
                 <h1 id="titulo-hero">Malanzán Dulces</h1>
@@ -35,8 +58,7 @@
             <div class="articulo-nosotros">
                 <article>
                     <h2>Sobre Nosotros</h2>
-                    <p class="nosotros-texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut corrupti, consequatur totam autem architecto nihil odio temporibus nostrum! Repellat porro nostrum odio delectus enim tempore eum explicabo deserunt blanditiis nulla.
-                    </p>
+                    <p class="nosotros-texto">Habiendo vivido en el norte de nuestro país, este emprendimiento nace de la intención de nuestra familia de acercar un poco de estos sabores a los que nosotros estamos acostumbrados para que todos puedan disfrutarlos. No sería justo que se pierdan de las delicias escondidas en varios rincones de Argentina.</p>
                 </article>
             </div>
             <div class="imagen-nosotros">
@@ -45,8 +67,7 @@
             <div class="articulo-origen">
                 <article id="Origen">
                     <h2>El pueblo de Malanzán</h2>
-                    <p class="origen-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, maiores totam? Neque nostrum minus optio laboriosam dignissimos quibusdam, dolorem eum quo consectetur consequuntur! Repudiandae ipsa consequuntur nulla ea, earum nostrum.
-                    </p>                
+                    <p class="origen-texto">Malanzán es un pequeño pueblo de la provincia de La Rioja. En la localidad se puede deleitar chivito asado, empanadas, pan casero y vinos; dulces y nueces de la zona. Se pueden visitar casas de familia, conociendo sobre la cultura local. A diferencia de otras localidades de la provincia de La Rioja, la elaboración local de vinos es muy escasa, dadas las condiciones geográficas y climáticas del lugar. Es más significativa la producción de dulces caseros tales como, el dulce de durazno, membrillo, uva, arrope de uva, higo, entre otros.</p>                
                 </article>
             </div>
             <div class="imagen-origen">
@@ -54,14 +75,14 @@
             </div>
             <div class="articulo-mate">
                 <article id="MateOrden">
-                    <h3>Cómo preparar un buen mate</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit rem doloremque consectetur distinctio quidem, iure nisi eaque labore quam id laboriosam provident dolorum recusandae expedita fuga minima aliquam atque! Dolore!</p>
+                    <h2>Cómo preparar un buen mate</h2>
+                    <p>Más allá de las polémicas que esto pueda despertar, nosotros somos fieles creyentes de que el mate lleva yuyos.</p>
                     <ol class="mate-list">
-                        <li>Paso 1</li>
-                        <li>Paso 2</li>
-                        <li>Paso 3</li>
-                        <li>Paso 4</li>
-                        <li>Paso 5</li>
+                        <li>Poner yerba con yuyos en el mate y agitar.</li>
+                        <li>Formar un hueco y derramar agua tibia</li>
+                        <li>Introducir la bombilla tapándole el orificio superior para no taparla.</li>
+                        <li>Poner el agua caliente siempre en el mismo lugar</li>
+                        <li>Compartirlo en la ronda!</li>
                     </ol>
                 </article>
             </div>
@@ -70,21 +91,39 @@
             </div>
         </main>
         <footer class="footer">
-            <div class="footer-logo">
-                <img src="img\prototipo1.png" alt="Malanzán Dulces" class="logo-footer">
+            <div class="parteDeArriba">
+                <div class="footer-logo">
+                    <figure>
+                    <a href="#"><img src="img\prototipo1.png" alt="Malanzán Dulces" class="logo-footer"></a>
+                    </figure>
+                </div>
+                <div class="footer-redes">
+                    <h3 class="titulo-footerlist">Seguinos en nuestras redes:</h3>
+                        <div class="footerredes">       
+                        <a href="https://twitter.com/"><img src="./img/twitter.png" alt="twitter"></a>
+                        <a href="https://www.facebook.com/"><img src="./img/facebook.png" alt="facebook"></a>
+                        <a href="https://www.youtube.com/"><img src="./img/youtube.png" alt="youtube"></a>
+                        <a href="https://www.instagram.com/malanzan.dulces/"><img src="./img/instagram.png" alt="Intagram"></a>
+                        </div>
+                </div>
+                <div class="box">
+                    <nav>
+                        <ul class="listadefooter">
+                            <li>Aviso Legal</li>
+                            <li>Política de Privacidad</li>
+                            <li>Términos y condiciones</li>
+                        </ul>
+                      </nav>
+                </div>
             </div>
-            <div class="footer-redes">
-                <h3 class="titulo-footerlist">Seguinos en nuestras redes:</h3>
-                <ul class="footer-list">
-                    <li class="lista-redes"><a href="https://www.instagram.com/malanzan.dulces/" target="_blank"><img class="icono-redes" src="img\instagram.svg">Instagram</a></li>
-                    <li class="lista-redes"><a href=""><img class="icono-redes" src="img\twitter.svg">Twitter</a></li>
-                    <li class="lista-redes"><a href=""><img class="icono-redes" src="img\facebook.svg">Facebook</a></li>
-                </ul>
-            </div>
-            <div class="contenedor-derechos">
-            <p class="derechos">Todos los derechos reservados @Federico Caldés</p>
+            <div class="parteDeAbajo">
+                <div class="contenedor-derechos">
+                <p class="derechos">Todos los derechos reservados @Federico Caldés</p>
+                </div>
             </div>
         </footer>
     </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
