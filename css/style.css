@@ -208,6 +208,24 @@ nav {
         width: 200px;
         height: auto;
     }
+    .footer .parteDeArriba{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+    figure img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer .parteDeArriba .box h3 {
+        text-align: center;
+    }
+    .footer .parteDeArriba .box .boxredes li {
+        list-style-type: none;
+        text-align: center;
+    }
 }
 
 
