@@ -22,33 +22,33 @@
         <div class="topnav" id="myTopnav">
             <nav class="navbar navbar-expand-lg bg-transparent">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#">
-                  <img src="../img/relleno2.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                  </a>
-                  <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="Productos.html">PRODUCTOS</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="Nosotros.html">NOSOTROS</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="Comocomprar.html">CÓMO COMPRAR</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="Contacto.html">CONTACTO</a>
-                      </li>
-                    </ul>
-                  </div>
+                    <a class="navbar-brand" href="#">
+                        <img src="../img/relleno2.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                    </a>
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Productos.html">PRODUCTOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Nosotros.html">NOSOTROS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Comocomprar.html">CÓMO COMPRAR</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Contacto.html">CONTACTO</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-              </nav>
+            </nav>
         </div>
         <!--HERO SECTION-->
         <section>
@@ -58,7 +58,29 @@
         </section>
     </header>
     <!--CONTENIDO PRINCIPAL-->
-    <main class="contenidoProductos">
+    <main>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="..\img\carrucel44.jpeg" class="d-inline w-100" alt="Combo">
+                </div>
+                <div class="carousel-item">
+                    <img src="..\img\carrucel22.jpeg" class="d-inline w-100" alt="Bolsas de Entrega">
+                </div>
+                <div class="carousel-item">
+                    <img src="..\img\carrucel33.jpeg" class="d-inline w-100" alt="Nueces">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="contenidoProductos">    
             <div class="seccionNueces">
                 <h2>Nueces Confitadas</h2>
                     <div class="subSeccionNueces">
@@ -104,6 +126,7 @@
                     </article>
                 </div>
             </div>
+        </div>
     </main>
     <!--::::FOOTER::::::-->
     <footer class="footer">
