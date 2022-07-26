@@ -1,0 +1,346 @@
+@import "variables"; 
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.img-logo {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    object-position: 20% 10%;
+}
+
+.contenedor {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+}
+
+.articulo-nosotros, .articulo-origen, .articulo-mate {
+    background: white;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 4px;
+
+
+}
+.imagen-nosotros, .imagen-origen, .imagen-mate {
+    background: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor .header {
+    background-color: rgb(236, 222, 182);
+    color: black;
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+.contenedor .footer {
+    grid-column: span 2;
+}
+
+.contenido {
+    grid-column: span 2;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto)
+}
+
+nav {
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 100%;
+    list-style-type: none;
+}
+
+.nav-list a {
+    color: black;
+}
+
+.nav-item a:hover {
+    color: black;
+    font-weight: bold;
+}
+
+#titulo-hero, #subtitulo-hero {
+    text-align: center;
+}
+
+.mate-list {
+    display: flex;
+    font-style: italic;
+    list-style-type: decimal;
+    flex-direction: column;
+    margin-left: 5rem;
+    margin-top: 2%;
+
+}
+
+#img-1, #img-2, #img-pasassolas, #img-nuezveganacortada {
+    width: 220px;
+    height: auto;
+}
+
+#img-mate, #img-nuecessolas, #img-nuezentera {
+    height: 220px;
+    width: auto;
+}
+
+
+
+
+
+
+/*
+.nosotros-texto, .origen-texto {
+    display: float;
+    width: 45%;
+
+
+}
+*/
+
+#Nosotros, #Historias {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* FOOTER*/
+.footer {
+    width: 100%;
+    background-color: rgb(236, 222, 182);
+}
+
+.footer .parteDeArriba {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 15px 0px;
+}
+
+.footer .parteDeArriba .box .figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .parteDeArriba .box figure img {
+    width: 190px;
+}
+
+.footer .parteDeArriba .box h3 {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-size: 23px;
+    font-weight: bold;
+
+}
+
+.footer .parteDeArriba .box .boxredes li {
+    list-style-type: none;
+}
+
+.footer .parteDeArriba .box .boxredes a {
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.footer .parteDeArriba .box .boxredes a:hover {
+    padding-left: 10px;
+}
+
+.icono-redes {
+    margin-right: 10px;
+}
+
+.footer .parteDeArriba .box .listadefooter {
+    list-style-type: none;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 40px;
+}
+
+.footer .parteDeAbajo {
+    background-color: rgb(197, 188, 165);
+    padding: 5px 5px;
+    text-align: center;
+}
+
+
+
+/* MEDIA RESPONSIVE*/
+
+@media screen and (min-width: 769px) {
+    html {
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .contenido {
+        grid-column: span 2;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto)
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contenido {
+        grid-column: 1 / -1;
+        grid-column: span 2;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, auto)
+    }
+    html{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    #img-mate, #img-1, #img-2 {
+        width: 200px;
+        height: auto;
+    }
+    .footer .parteDeArriba{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+    figure img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer .parteDeArriba .box h3 {
+        text-align: center;
+    }
+    .footer .parteDeArriba .box .boxredes li {
+        list-style-type: none;
+        text-align: center;
+    }
+}
+
+
+
+/*PAGINA PRODUCTOS*/
+
+
+
+.contenedorProductos .headerProductos {
+    background-color: rgb(236, 222, 182);
+    color: black;
+}
+
+.contenidoProductos {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, auto)
+}
+
+.seccionNueces, .seccionFrutos, .seccionNuevos {
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 768px) {
+    .contenidoProductos {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, auto);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .carousel .carousel-item {
+        height: 600px;
+    }
+    .carousel-item img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-height: 600px;
+    }
+}
+
+/*PAGINA NOSOTROS */
+.contenedorNosotros .headerNosotros {
+    background-color: rgb(236, 222, 182);
+    color: black;
+}
+
+.historia-familia {
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+/*PAGINA CONTACTO */
+.contenedorContacto .headerContacto {
+    background-color: rgb(236, 222, 182);
+    color: black;
+}
+
+.formContacto {
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+
+}
+
+form {
+    width: 60vw;
+	max-width: 500px;
+	min-width: 300px;
+	margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+fieldset {
+    border: none;
+    padding: 2rem 0;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+button[type="submit"] {
+    display: block;
+}
+
+button[type="reset"] {
+    display: block;
+}
+
+
+/*PAGINA COMO COMPRAR */
+.contenedorComprar .headerComprar {
+    background-color: rgb(236, 222, 182);
+    color: black;
+}
+
+.comrpar {
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+}
