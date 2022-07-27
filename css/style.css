@@ -1,7 +1,14 @@
+/*
+$color-primary: rgb(236, 222, 182);
+$color-secondary: black;
+$color-terciary: 
+$color-accent: rgb(197, 188, 165);
+*/
 * {
   margin: 0;
   padding: 0;
-  font-family: "Bree Serif", serif; }
+  font-family: "Bree Serif", serif;
+  font-size: 16px; }
 
 .img-logo {
   width: 100%;
@@ -51,14 +58,11 @@
   display: flex;
   justify-content: center; }
 
-.contenedor .header {
+.header {
   background-color: #ecdeb6;
-  color: black;
   grid-column-start: 1;
-  grid-column-end: -1; }
-
-.contenedor .footer {
-  grid-column: span 2; }
+  grid-column-end: -1;
+  padding-bottom: 10px; }
 
 .contenido {
   grid-column: span 2;
@@ -105,20 +109,13 @@ nav {
   height: 220px;
   width: auto; }
 
-/*
-.nosotros-texto, .origen-texto {
-    display: float;
-    width: 45%;
-
-
-}
-*/
 #Nosotros, #Historias {
   margin-top: 15px;
   margin-bottom: 15px; }
 
 /* FOOTER*/
 .footer {
+  grid-column: span 2;
   width: 100%;
   background-color: #ecdeb6; }
 
@@ -208,21 +205,31 @@ nav {
     text-align: center; }
   .footer .parteDeArriba .box .boxredes li {
     list-style-type: none;
-    text-align: center; } }
+    text-align: center; }
+  .listadefooter, .listaderedes {
+    padding-right: 32px; } }
 
 /*PAGINA PRODUCTOS*/
-.contenedorProductos .headerProductos {
+.headerProductos {
   background-color: #ecdeb6;
-  color: black; }
+  padding-bottom: 10px; }
 
 .contenidoProductos {
+  background: #ddd6cb;
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1, auto); }
 
-.seccionNueces, .seccionFrutos, .seccionNuevos {
-  background: white;
+.seccionNueces {
+  padding: 20px;
+  border-radius: 4px; }
+
+.seccionFrutos {
+  padding: 20px;
+  border-radius: 4px; }
+
+.seccionNuevos {
   padding: 20px;
   border-radius: 4px; }
 

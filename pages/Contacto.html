@@ -25,33 +25,34 @@
         <div class="topnav" id="myTopnav">
             <nav class="navbar navbar-expand-lg bg-transparent">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#">
-                  <img src="../img/relleno2.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                  </a>
-                  <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="Productos.html">PRODUCTOS</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="Nosotros.html">NOSOTROS</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="Comocomprar.html">CÓMO COMPRAR</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="Contacto.html">CONTACTO</a>
-                      </li>
-                    </ul>
-                  </div>
+                    <a class="navbar-brand" href="#">
+                        <img src="../img/relleno2.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                    </a>
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Productos.html">PRODUCTOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Nosotros.html">NOSOTROS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Comocomprar.html">CÓMO COMPRAR</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Contacto.html">CONTACTO</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-              </nav>
+            </nav>
+        </div>
     <!--HERO SECTION-->
         <section>
             <h2 id="titulo-hero">Malanzán Dulces</h2>
@@ -64,17 +65,22 @@
             <h2>Escribinos</h2>
             <form class="formFinal" action="">
                 <fieldset>
-                    <label for="nombre">Nombre:</label>
-                    <input  size="20" type="text" placeholder="Ingrese su nombre" name="nombre" required>
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese su nombre" name="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput2" class="form-label">E-mail:</label>
+                        <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese su e-mail" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Escriba su mensaje:</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="mensaje" required></textarea>
+                    </div>
 
-                    <label for="email">Email:</label>
-                    <input size="20" type="email" placeholder="Ingrese su email" name="email" required>
+                    <button type="reset" class="btn btn-secondary btn-sm mb-3">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
 
-                    <label for="mensaje">Escriba su mensaje:</label>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" required></textarea>
-                    
-                    <button type="reset">Cancelar</button>
-                    <button type="submit">Enviar</button>
                 </fieldset>
             </form>
         </section>
