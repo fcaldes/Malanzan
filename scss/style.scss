@@ -136,69 +136,69 @@ nav {
 
 /* FOOTER*/
 .footer {
-    grid-column: span 2;
-    width: 100%;
-    background-color: $color-primary;
+  grid-column: span 2;
+  width: 100%;
+  background-color: $color-primary;
 }
 
 .footer .parteDeArriba {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    padding: 15px 0px;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 15px 0px;
 }
 
 .footer .parteDeArriba .box .figure {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer .parteDeArriba .box figure img {
-    width: 190px;
+  width: 190px;
 }
 
 .footer .parteDeArriba .box h3 {
-    margin-top: 15px;
-    margin-bottom: 25px;
-    font-size: 23px;
-    font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  font-size: 23px;
+  font-weight: bold;
 
 }
 
 .footer .parteDeArriba .box .boxredes li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .footer .parteDeArriba .box .boxredes a {
-    text-align: center;
-    transition: all 300ms ease;
+  text-align: center;
+  transition: all 300ms ease;
 }
 
 .footer .parteDeArriba .box .boxredes a:hover {
-    padding-left: 10px;
+  padding-left: 10px;
 }
 
 .icono-redes {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .footer .parteDeArriba .box .listadefooter {
-    list-style-type: none;
-    text-align: center;
-    margin-bottom: 0;
-    margin-top: 40px;
+  list-style-type: none;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 40px;
 }
 
 .footer .parteDeAbajo {
-    background-color: rgb(197, 188, 165);
-    padding: 5px 5px;
-    text-align: center;
+  background-color: rgb(197, 188, 165);
+  padding: 5px 5px;
+  text-align: center;
 }
 
 
@@ -206,55 +206,55 @@ nav {
 /* MEDIA RESPONSIVE*/
 
 @media screen and (min-width: 769px) {
-    html {
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-    }
-    .contenido {
-        grid-column: span 2;
-        display: grid;
-        grid-gap: 20px;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, auto)
-    }
+  html {
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .contenido {
+      grid-column: span 2;
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, auto)
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .contenido {
-        grid-column: 1 / -1;
-        grid-column: span 2;
-        display: grid;
-        grid-gap: 20px;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(3, auto)
-    }
-    html{
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-    }
-    #img-mate, #img-1, #img-2 {
-        width: 200px;
-        height: auto;
-    }
-    .footer .parteDeArriba{
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap:30px;
-        padding: 35px 0px;
-    }
-    figure img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .footer .parteDeArriba .box h3 {
-        text-align: center;
-    }
-    .footer .parteDeArriba .box .boxredes li {
-        list-style-type: none;
-        text-align: center;
-    }
-    .listadefooter, .listaderedes {
-        padding-right: 32px;
-    }
+  .contenido {
+      grid-column: 1 / -1;
+      grid-column: span 2;
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(3, auto)
+  }
+  html{
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+  #img-mate, #img-1, #img-2 {
+      width: 200px;
+      height: auto;
+  }
+  .footer .parteDeArriba{
+      width: 90%;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap:30px;
+      padding: 35px 0px;
+  }
+  figure img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .footer .parteDeArriba .box h3 {
+      text-align: center;
+  }
+  .footer .parteDeArriba .box .boxredes li {
+      list-style-type: none;
+      text-align: center;
+  }
+  .listadefooter, .listaderedes {
+      padding-right: 32px;
+  }
 }
 
 
@@ -262,115 +262,121 @@ nav {
 /*PAGINA PRODUCTOS*/
 
 .headerProductos {
-    background-color: $color-primary;
-    padding-bottom: 10px;
+  background-color: $color-primary;
+  padding-bottom: 10px;
 }
 
 .contenido {
-    &Productos {
-        background: $color-terciary;
-        display: grid;
-        grid-gap: 20px;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(1, auto)
-    }
+  &Productos {
+      background: $color-terciary;
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(1, auto)
+  }
 }
 
 .seccion {
-    &Nueces{
-        padding: 20px;
-        border-radius: 4px;
-    }
-    &Frutos{
-        padding: 20px;
-        border-radius: 4px;
-    }
-    &Nuevos {
-        padding: 20px;
-        border-radius: 4px;
-    }
+  &Nueces{
+      padding: 20px;
+      border-radius: 4px;
+  }
+  &Frutos{
+      padding: 20px;
+      border-radius: 4px;
+  }
+  &Nuevos {
+      padding: 20px;
+      border-radius: 4px;
+  }
 }
 
 
 @media screen and (max-width: 768px) {
-    .contenidoProductos {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, auto);
-    }
+  .contenidoProductos {
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, auto);
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .carousel .carousel-item {
-        height: 600px;
-    }
-    .carousel-item img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        min-height: 600px;
-    }
+  .carousel .carousel-item {
+      height: 600px;
+  }
+  .carousel-item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 600px;
+  }
 }
 
 /*PAGINA NOSOTROS */
 .contenedorNosotros .headerNosotros {
-    background-color: rgb(236, 222, 182);
-    color: black;
+  background-color: rgb(236, 222, 182);
+  color: black;
 }
 
 .historia-familia {
-    background: white;
-    padding: 20px;
-    border-radius: 4px;
+  background: white;
+  padding: 20px;
+  border-radius: 4px;
 }
 
 /*PAGINA CONTACTO */
 .contenedorContacto .headerContacto {
-    background-color: rgb(236, 222, 182);
-    color: black;
+  background-color: rgb(236, 222, 182);
+  color: black;
 }
 
 .formContacto {
-    background: white;
-    padding: 20px;
-    border-radius: 4px;
+  background: white;
+  padding: 20px;
+  border-radius: 4px;
 
 }
 
 form {
-    width: 60vw;
-	max-width: 500px;
-	min-width: 300px;
-	margin: 0 auto;
-    padding-bottom: 2em;
+  width: 60vw;
+max-width: 500px;
+min-width: 300px;
+margin: 0 auto;
+  padding-bottom: 2em;
 }
 
 fieldset {
-    border: none;
-    padding: 2rem 0;
+  border: none;
+  padding: 2rem 0;
 }
 
 label {
-    display: block;
-    margin: 0.5rem 0;
+  display: block;
+  margin: 0.5rem 0;
 }
 
 button[type="submit"] {
-    display: block;
+  display: block;
 }
 
 button[type="reset"] {
-    display: block;
+  display: block;
 }
 
 
 /*PAGINA COMO COMPRAR */
 .contenedorComprar .headerComprar {
-    background-color: rgb(236, 222, 182);
-    color: black;
+  background-color: rgb(236, 222, 182);
+  color: black;
 }
 
 .comprar {
-    background: white;
-    padding: 20px;
-    border-radius: 4px;
+  background: white;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+/* NOSOTROS*/
+.fotomalanzan {
+    width: 100%;
+    height: auto;
 }
